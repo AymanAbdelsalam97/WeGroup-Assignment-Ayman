@@ -3,15 +3,18 @@
 Your task is to develop a **Users overview** application. The application should include the following features:
 
 1. **Overview of Users**: Display an overview of all users with their name, email address, and role. The list should be fetched from the mock API provided in the server folder.
-   Done
+   **Done**
 2. **Sort Users**: Implement functionality to sort users by their name or role. The selected sorting preference should persist even after refreshing the page.
-   Done
+      **Done**
+
 3. **Create a New User**: Provide a form to add a new user by entering their name, email, and role.
-   Done
+   **Done**
 4. **Edit a User**: When a user clicks 'Edit', a form should appear with the details of the selected user, allowing them to make changes. After saving the changes, the user's details in the list should be updated.
-   Done
+      **Done**
+
 5. **Delete a User**: Allow users to delete an existing user from the list.
-   Done
+      **Done**
+
    This assignment will give us insights in how well you can create a Front-End application for a Back-End. There are several important points where we will rate your code on:
 
 - UX
