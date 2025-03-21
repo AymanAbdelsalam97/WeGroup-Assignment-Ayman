@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import { ChevronDown, ChevronUp, MoreHorizontal } from "lucide-react";
 import {
   Dialog,
@@ -53,6 +54,7 @@ export function UsersOverview({
 }: TUsersViewProps) {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [userIdToDelete, setUserIdToDelete] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   const actions = [
     { action: "view", text: "View user" },
@@ -74,6 +76,9 @@ export function UsersOverview({
   };
   const handleEditClick = (id: number) => {
     return handleEdit(id, users.find((user) => user.id === id) as TUser);
+  };
+  const handleViewDetails = (id: number) => {
+    navigate(`/users/${id}`);
   };
   return (
     <div className="space-y-4">
@@ -160,7 +165,9 @@ export function UsersOverview({
                                   ? () => handleDeleteClick(user.id)
                                   : action.action === "edit"
                                   ? () => handleEditClick(user.id)
-                                  : () => {}
+                                  : action.action === "view"
+                                  ? () => handleViewDetails(user.id)
+                                  : undefined
                               }
                             >
                               {action.text}

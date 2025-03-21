@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLocation } from "react-router";
 import {
   Form,
   FormControl,
@@ -46,18 +47,24 @@ export function EditUserForm({
   userData,
 }: TEditUserFormProps) {
   const queryClient = useQueryClient();
+  const location = useLocation();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const editMutation = useMutation({
     mutationFn: EditUser,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["users"] });
-      setIsFormVisible(false);
+      if (location.pathname == "/") {
+        setIsFormVisible(false);
+      } else {
+        return;
+      }
     },
     onError: (error) => {
       console.error("Error updating user:", error);
     },
   });
+  console.log(location.pathname);
 
   const form = useForm<UserFormValues>({
     resolver: zodResolver(userFormSchema),
