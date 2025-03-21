@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "role": "User"
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Admin",
+      "id": 4
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsd",
+      "id": 5
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsd",
+      "id": 6
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsddsfdsfsd",
+      "id": 7
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsddsfdsfsd",
+      "id": 8
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsddsfdsfsd",
+      "id": 9
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsddsfdsfsd",
+      "id": 10
+    },
+    {
+      "name": "Adminuser",
+      "email": "admin@email.com",
+      "role": "Adminsddsfdsfsd",
+      "id": 11
+    },
+    {
+      "name": "Ayman",
+      "email": "aymanabdelsalam17@gmail.com",
+      "role": "User",
+      "id": 12
+    },
+    {
+      "name": "Ayman Abdelsalam",
+      "email": "aymanabdelsalam171@gmail.com",
+      "role": "User",
+      "id": 13
+    },
+    {
+      "name": "sdfdsfdsfsdffsdf",
+      "email": "sdfdsfdsdfsf@email.com",
+      "role": "User",
+      "id": 15
+    },
+    {
+      "name": "lastadmin",
+      "email": "lastadmin@email.com",
+      "role": "Admin",
+      "id": 16
+    }
+  ]
+}
